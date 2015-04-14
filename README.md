@@ -48,9 +48,9 @@ b) setContentView señala que hay una clase estática llamada R.layout y, que de
 
 **Punto 5**
 
-a) El método findViewById() enlaza las variables con los objetos definidos en el archivo XML. Recibe como parámetro una ruta que parte de la referencia a la clase R.
+a) El método **findViewById()** enlaza las variables con los objetos definidos en el archivo XML. Recibe como parámetro una ruta que parte de la referencia a la clase R.
 
-b) 
+b) Al quitar el **(EditText)**, no compila el proyecto y saca un error "error: incompatible types: View cannot be converted to EditText" lo que significa que la vista no puede convertir el texto.
 
 
 **Punto 7**
