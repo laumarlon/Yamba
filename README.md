@@ -53,10 +53,6 @@ a) El método findViewById() enlaza las variables con los objetos definidos en e
 b) 
 
 
-**Punto 6**
-
-
-
 **Punto 7**
 
 a) Los logging son registros de actividades del sistema. En Android existe la clase android.util.Log que proporciona ese servicio. Se clasifica por su nivel de criticidad.
