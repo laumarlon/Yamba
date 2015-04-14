@@ -63,9 +63,10 @@ a) Los logging son registros de actividades del sistema. En Android existe la cl
 
 b) LogCat permite la visualización de los mensajes de log. Ofrece varias funcionalidades para la visualización y búsqueda de determinados mensajes.
 
-c) log.e(TAG, message) muestra los mensajes a nivel de Error
-	 log.w(TAG, message) muestra los mensajes a nivel de Warning
-	 log.i(TAG, message) muestra los mensajes a nivel de Informacion
+c) 3 tipos de Log 
+- log.e(TAG, message) muestra los mensajes a nivel de Error
+- log.w(TAG, message) muestra los mensajes a nivel de Warning
+- log.i(TAG, message) muestra los mensajes a nivel de Informacion
 
 d)
 
