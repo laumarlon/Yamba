@@ -96,5 +96,5 @@ class Laboratorio extends AsyncTask<Parametros, Progreso, Resultado> {
 
 El método **doInBackground()** es el que realiza la tarea asignada. Dicho método se ejecuta en el hilo del interfaz de usuario y lo hace en un hilo nuevo creado para ese propósito. 
 
-
+c) El método **onPostExecute()** muestra la tarea en la interfaz de usuario.
 
