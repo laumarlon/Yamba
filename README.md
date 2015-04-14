@@ -27,6 +27,7 @@ b) wrap_content asignara para el componente solo el espacio en pantalla requerid
 
 c) Nos permite identificar un componente para hacer uso de el en la clase que despligue el fichero xml de layouts
 
+
 **Punto 3**
 
 a) android:text="string/Tweet"
@@ -36,6 +37,7 @@ su nombre es "button_tweet", y se referencia con este no con su contenido
 android:text="@button_tweet/string"
 En este caso se invirtio el verdadero orden, se identifica por el string y luego se llama la variable
 
+
 **Punto 4**
 
 a) @Override es una anotacion que significa que estas sobre escribiendo un metodo de la clase padre, ya sea para mejorar el metodo o para que se acople a tu clase hija
@@ -43,13 +45,16 @@ a) @Override es una anotacion que significa que estas sobre escribiendo un metod
 
 b) setContentView señala que hay una clase estática llamada R.layout y, que dentro de esa clase hay una constante entera que apunta a una vista definida por un fichero de recursos layout XML con los componentes que se visualizaran en la actividad y debe estar en el directorio ./res/layout
 
+
 **Punto 5**
 
 a) El método findViewById() enlaza las variables con los objetos definidos en el archivo XML. Recibe como parámetro una ruta que parte de la referencia a la clase R.
 
 b) 
 
+
 **Punto 6**
+
 
 
 **Punto 7**
@@ -63,6 +68,7 @@ c) log.e(TAG, message) muestra los mensajes a nivel de Error
 	 log.i(TAG, message) muestra los mensajes a nivel de Informacion
 
 d)
+
 
 **Punto 8**
 
