@@ -74,5 +74,26 @@ d)
 
 a) La diferencia entre un simple-thread y un multithread, es que el simple-thread son programas que realizan una sola tarea, denominados de flujo único. En cambio los multithread realizan más de una tarea, denominados de flujo multiple.
 
+b) Una tarea asíncrona son cálculos que se ejecutan en un hilo secundario y cuyo resultado queremos que se publique en el hilo del interfaz de usuario.
+
+Se crea de la siguiente manera (donde Parametros, Progreso y Resultado serán reemplazados por nombres de clases según los tipos de datos con los que trabaje la tarea):
+
+class Laboratorio extends AsyncTask<Parametros, Progreso, Resultado> {
+       @Override protected void onPreExecute() {
+              …     
+       }
+       @Override protected Resultado doInBackground(Parametros... par) {
+             …     
+       }
+       @Override protected void onProgressUpdate(Progreso... prog) {
+       …     
+       }
+       @Override protected void onPostExecute(Resultado result) {
+          …    
+       }
+}
+
+El método **doInBackground()** es el que realiza la tarea asignada. Dicho método se ejecuta en el hilo del interfaz de usuario y lo hace en un hilo nuevo creado para ese propósito. 
+
 
 
