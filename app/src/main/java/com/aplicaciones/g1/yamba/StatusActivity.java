@@ -62,6 +62,7 @@ public class StatusActivity extends ActionBarActivity implements View.OnClickLis
                                       int count) {
             }
         });
+        Log.d(TAG,"Mensaje de Depuración");
     }
 
 
