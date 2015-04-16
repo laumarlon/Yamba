@@ -1,6 +1,6 @@
 # Yamba
 
-###**LABORATORIO 2 - RESPUESTAS**
+###**LAB2 FRAGMENTS- RESPUESTAS**
 
 **Punto 6**
 
@@ -43,7 +43,7 @@ R/: Se debe llamar el método commit para que los cambios se lleven a cabo en ca
 
 
 .
-###**LABORATORIO 1 - RESPUESTAS**
+###**LAB1 UI - RESPUESTAS**
 
 **Punto 2**
 
