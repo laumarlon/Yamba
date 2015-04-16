@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-39f6c3ab2334e616b7b61e9bae973a1d0f87b3fd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\pre-dexed\debug\classes-5c85001f6175a87d5059aaa420230d8bb0b50854.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\pre-dexed\debug\classes-bd86521a3a687485cd52343aa3b3600e8c616e19.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\pre-dexed\debug\classes-90c2793666c05f07f0da5778c468ad368b23ce45.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-52572515274d05319e3670f913a6f5813fc0ccdc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app\libs\yambaclientlib.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="564ffd3f1dc6779da46f36e4cb78854ee45e6a1b">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\pre-dexed\debug\yambaclientlib-906a81b6cb693ddb3aec98ddf0818ac07a2c779e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\pre-dexed\debug\classes-ff11afcba9100e7e22db52924423c69466f38c5f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app4\libs\yambaclientlib.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="564ffd3f1dc6779da46f36e4cb78854ee45e6a1b">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\pre-dexed\debug\yambaclientlib-fcfd6f8d5ef64a5f720aecda838cd93a16d39d9d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-7191a8293b8f41829475dd937f313a10ecb89b8a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app4\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-c60a00673aec3a088055d8459549b643fe4efa9d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Usuario\Desktop\Yamba 1\app\build\intermediates\pre-dexed\debug\classes-0e326a5c41230bf743e46ec5e361d8ccfe633f4f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\pre-dexed\debug\classes-880d34558c38186e792945f0e3247cad5b50445b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\libs\yambaclientlib.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="564ffd3f1dc6779da46f36e4cb78854ee45e6a1b">
+        <dex dex="C:\Users\Usuario\Documents\GitHub\Yamba\Yamba 2\app4\build\intermediates\pre-dexed\debug\yambaclientlib-91d69a7f3509dbc31ae6bfc919e8d6b190271c74.jar" />
+    </item>
+
+</items>
