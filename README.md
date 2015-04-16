@@ -1,6 +1,6 @@
 # Yamba
 
-###**LAB2 FRAGMENTS- RESPUESTAS**
+###**LAB2 FRAGMENTS - RESPUESTAS**
 
 **Punto 6**
 
