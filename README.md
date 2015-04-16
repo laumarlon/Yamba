@@ -1,7 +1,49 @@
 # Yamba
 
-#**RESPUESTAS**
+###**LABORATORIO 2 - RESPUESTAS**
 
+**Punto 6**
+
+View view = inflater.inflate(R.layout.fragment_status, container, false);
+Se utiliza para añadir la vista fragment_status al diseño del fragmento. 
+Solo nos interesa inflar el contenedor que esta en el primer parametro (fragments_status).
+
+**Punto 7**
+
+a) Explicar:
+
+- onResume(): El fragmento permite la interacción con el usuario.
+- onStar(): Hace que el fragmento sea visible al usuario.
+- onStop(): El usuario deja de utilizar el fragmento y por ende, ya no es visible.
+
+
+b) Un Fragment siempre esta en un Activity, no pueden existir independientes. 
+Lo que significa que si el ciclo de vida de la actividad termina, el o los fragmentos que esten en esa actividad también serán terminados.
+
+**Punto 8**
+
+Explicar:
+
+- FragmentManager fragmentManager = getFragmentManager();
+
+R/: Llama a un fragment dentro de una actividad.
+
+- FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction(); 
+
+R/: Es un API que permite realizar transacciones entre fragments.
+
+- FragmentTransaction.add(android.R.id.content, fragment,  fragment.getClass().getSimpleName()); 
+
+R/: Es para agregar un fragmento al estado de la actividad.
+
+- FragmentTransaction.commit(); 
+
+R/: Se debe llamar el método commit para que los cambios se lleven a cabo en cada ejecución. 
+
+
+
+.
+###**LABORATORIO 1 - RESPUESTAS**
 
 **Punto 2**
 
