@@ -1,5 +1,67 @@
 # Yamba
 
+###**LAB5 CONTENT PROVIDERS - RESPUESTAS**
+
+**Punto 1**
+
+-DB_NAME: Este sera el fichero SQLite que contendra nuestra base de datos.
+-DB_VERSION: Simplemente sera el numero de la version que le daremos al esquema creado para la base de datos.
+-TABLE: Este sera el nombre de la tabla que contendra nuestra base de datos.
+-DEFAULT_SORT: Ordena descendente por lo valores dados en Column.
+-ID: Es un identificador de la tabla.
+
+**Punto 2**
+
+- El método **onCreate** se usa cuando la base de datos se crea por primera vez. Aquí es donde se define la estructura de las tablas y se cargan eventualmente los datos iniciales
+
+- El método **onUpgrade** se usa cuando la base de datos debe ser actualizada.
+
+**Punto 3**
+
+import java.util.List;
+Importa la clase listas contenida en el paquete java.util
+
+import android.content.ContentValues;
+Para poder definir campos, es decir los registros
+
+import android.net.Uri;
+Para referirnos a un Url Web
+
+import com.marakana.android.yamba.clientlib.YambaClient.Status;
+importamos la clase Status del API de Yamba
+
+ContentValues values = new ContentValues();
+Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
+
+for (Status status : timeline) {
+values.clear();
+values.put(StatusContract.Column.ID, status.getId());
+values.put(StatusContract.Column.USER, status.getUser());
+values.put(StatusContract.Column.MESSAGE,
+status.getMessage());
+values.put(StatusContract.Column.CREATED_AT, status
+.getCreatedAt().getTime());
+
+Por cada registro se crea un ContentValues y se reutiliza el mismo ya que se limpia cada vez que inicia un ciclo en el for para posteriormente llenarlo con los valores apropiados provenientes del Status
+
+Uri uri = getContentResolver().insert(
+StatusContract.CONTENT_URI, values);
+if (uri != null) {
+count++;
+Log.d(TAG,
+String.format("%s: %s", status.getUser(),
+status.getMessage()));
+}
+}
+
+if (count > 0) {
+sendBroadcast(new Intent(
+"com.marakana.android.yamba.action.NEW_STATUSES").putExtra(
+"count", count));
+}
+
+
+
 ###**LAB2 FRAGMENTS - RESPUESTAS**
 
 **Punto 6**
