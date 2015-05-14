@@ -4,11 +4,11 @@
 
 **Punto 1**
 
--DB_NAME: Este sera el fichero SQLite que contendra nuestra base de datos.
--DB_VERSION: Simplemente sera el numero de la version que le daremos al esquema creado para la base de datos.
--TABLE: Este sera el nombre de la tabla que contendra nuestra base de datos.
--DEFAULT_SORT: Ordena descendente por lo valores dados en Column.
--ID: Es un identificador de la tabla.
+- DB_NAME: Este sera el fichero SQLite que contendra nuestra base de datos.
+- DB_VERSION: Simplemente sera el numero de la version que le daremos al esquema creado para la base de datos.
+- TABLE: Este sera el nombre de la tabla que contendra nuestra base de datos.
+- DEFAULT_SORT: Ordena descendente por lo valores dados en Column.
+- ID: Es un identificador de la tabla.
 
 **Punto 2**
 
