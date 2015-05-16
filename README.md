@@ -4,6 +4,8 @@
 Se implementó un List View para que mostrara la información del content provider que se habia realizado con anterioridad y lo enlazamos por medio del Adapter. 
 
 
+
+.
 ###**LAB5 CONTENT PROVIDERS - RESPUESTAS**
 
 **Punto 1**
@@ -91,6 +93,7 @@ Sirve para....
 **b)** Defina qué es un Cursor y de un ejemplo.
 
 
+
 .
 ###**LAB4 SERVICES - RESPUESTAS**
 
@@ -101,7 +104,6 @@ La difernecia entre un IntentService y un Service es...
 
 **Punto 6**
 onDestroy() se llama cuando....
-
 
 
 
