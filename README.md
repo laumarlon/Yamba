@@ -1,5 +1,9 @@
 # Yamba
 
+###**LAB6 LIST VIEW & ADAPTERS**
+Se implementó un List View para que mostrara la información del content provider que se habia realizado con anterioridad y lo enlazamos por medio del Adapter. 
+
+
 ###**LAB5 CONTENT PROVIDERS - RESPUESTAS**
 
 **Punto 1**
@@ -60,8 +64,55 @@ sendBroadcast(new Intent(
 "count", count));
 }
 
+**Punto 5**
+- public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/vnd.com.marakana.android.yamba.provider.status";
+Sirve para....
+
+- public static final String STATUS_TYPE_DIR = "vnd.android.cursor.dir/vnd.com.marakana.android.yamba.provider.status";
+Sirve para....
+
+- public static final String DEFAULT_SORT = Column.CREATED_AT + "DESC";
+Sirve para....
+
+**Punto 6**
+**a)**Explique qué hacen los siguientes métodos y como estan funcionando dentro de la clase StatusProvider:
+- onCreate:
+
+- getType:
+
+- insert:
+
+- update:
+
+- delete:
+
+- query:
+
+**b)** Defina qué es un Cursor y de un ejemplo.
 
 
+.
+###**LAB4 SERVICES - RESPUESTAS**
+
+**Punto 5**
+onHandleIntent: 
+
+La difernecia entre un IntentService y un Service es...
+
+**Punto 6**
+onDestroy() se llama cuando....
+
+
+
+
+.
+###**LAB3 INTENTS**
+Se utiliza para llamar otros componentes como services, activities, con el objetivo de facilitar su comunicación.
+En este laboratorio se realizo la aplicacion de intents y se añadieron preferencias a la app.
+
+
+
+.
 ###**LAB2 FRAGMENTS - RESPUESTAS**
 
 **Punto 6**
