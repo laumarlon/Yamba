@@ -98,12 +98,13 @@ Sirve para....
 ###**LAB4 SERVICES - RESPUESTAS**
 
 **Punto 5**
-onHandleIntent: 
+onHandleIntent: Contiene el código de la tarea que se va a ejecutar en segundo plano.
 
-La difernecia entre un IntentService y un Service es...
+La diferencia entre un IntentService y un Service:
+Un Service es un componente de la aplicación que no tiene interfaz, se ejecuta en el hilo principal y para deternerlo hay que crear un hilo nuevo dentro del servicio. En cambio un IntentService siempre se ejecuta en segundo plano y se utliza para tareas que requieran un procesamiento largo (en segundo plano) y luego se detienen solos.
 
 **Punto 6**
-onDestroy() se llama cuando....
+onDestroy() se llama cuando un servicio es terminado, es decir, dónde deben terminarse hilos o tareas que puedan estar ejecutándose.
 
 
 
