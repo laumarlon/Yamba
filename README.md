@@ -4,8 +4,7 @@
 Se implementó un List View para que mostrara la información del content provider que se habia realizado con anterioridad y lo enlazamos por medio del Adapter. 
 
 
-
-.
+<br><br>
 ###**LAB5 CONTENT PROVIDERS - RESPUESTAS**
 
 **Punto 1**
@@ -93,8 +92,7 @@ Sirve para....
 **b)** Defina qué es un Cursor y de un ejemplo.
 
 
-
-.
+<br><br>
 ###**LAB4 SERVICES - RESPUESTAS**
 
 **Punto 5**
@@ -107,15 +105,13 @@ Un Service es un componente de la aplicación que no tiene interfaz, se ejecuta 
 onDestroy() se llama cuando un servicio es terminado, es decir, dónde deben terminarse hilos o tareas que puedan estar ejecutándose.
 
 
-
-.
+<br><br>
 ###**LAB3 INTENTS**
 Se utiliza para llamar otros componentes como services, activities, con el objetivo de facilitar su comunicación.
 En este laboratorio se realizo la aplicacion de intents y se añadieron preferencias a la app.
 
 
-
-.
+<br><br>
 ###**LAB2 FRAGMENTS - RESPUESTAS**
 
 **Punto 6**
@@ -157,8 +153,7 @@ R/: Es para agregar un fragmento al estado de la actividad.
 R/: Se debe llamar el método commit para que los cambios se lleven a cabo en cada ejecución. 
 
 
-
-.
+<br><br>
 ###**LAB1 UI - RESPUESTAS**
 
 **Punto 2**
