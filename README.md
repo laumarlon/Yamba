@@ -15,6 +15,7 @@ Se implementó un List View para que mostrara la información del content provid
 - DEFAULT_SORT: Ordena descendente por lo valores dados en Column.
 - ID: Es un identificador de la tabla.
 
+
 <br>
 **Punto 2**
 
@@ -22,22 +23,23 @@ Se implementó un List View para que mostrara la información del content provid
 
 - El método **onUpgrade** se usa cuando la base de datos debe ser actualizada.
 
+
 <br>
 **Punto 3**
 
-import java.util.List;
+- import java.util.List;
 Importa la clase listas contenida en el paquete java.util
 
-import android.content.ContentValues;
+- import android.content.ContentValues;
 Para poder definir campos, es decir los registros
 
-import android.net.Uri;
+- import android.net.Uri;
 Para referirnos a un Url Web
 
-import com.marakana.android.yamba.clientlib.YambaClient.Status;
+- import com.marakana.android.yamba.clientlib.YambaClient.Status;
 importamos la clase Status del API de Yamba
 
-ContentValues values = new ContentValues();
+- ContentValues values = new ContentValues();
 Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
 
 for (Status status : timeline) {
@@ -69,17 +71,19 @@ sendBroadcast(new Intent(
 
 <br>
 **Punto 5**
-- public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/vnd.com.marakana.android.yamba.provider.status";
+
+- public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/vnd.com.marakana.android.yamba.provider.status";<br>
 Sirve para....
 
-- public static final String STATUS_TYPE_DIR = "vnd.android.cursor.dir/vnd.com.marakana.android.yamba.provider.status";
+- public static final String STATUS_TYPE_DIR = "vnd.android.cursor.dir/vnd.com.marakana.android.yamba.provider.status";<br>
 Sirve para....
 
-- public static final String DEFAULT_SORT = Column.CREATED_AT + "DESC";
+- public static final String DEFAULT_SORT = Column.CREATED_AT + "DESC";<br>
 Sirve para....
 
 <br>
 **Punto 6**
+
 **a)**Explique qué hacen los siguientes métodos y como estan funcionando dentro de la clase StatusProvider:
 - onCreate:
 
@@ -100,13 +104,16 @@ Sirve para....
 ###**LAB4 SERVICES - RESPUESTAS**
 
 **Punto 5**
+
 - onHandleIntent: Contiene el código de la tarea que se va a ejecutar en segundo plano.
 
 - La diferencia entre un IntentService y un Service:<br>
 Un Service es un componente de la aplicación que no tiene interfaz, se ejecuta en el hilo principal y para deternerlo hay que crear un hilo nuevo dentro del servicio. En cambio un IntentService siempre se ejecuta en segundo plano y se utliza para tareas que requieran un procesamiento largo (en segundo plano) y luego se detienen solos.
 
+
 <br>
 **Punto 6**
+
 onDestroy() se llama cuando un servicio es terminado, es decir, dónde deben terminarse hilos o tareas que puedan estar ejecutándose.
 
 
