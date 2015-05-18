@@ -12,7 +12,7 @@ Se implementó un List View para que mostrara la información del content provid
 - DB_NAME: Este sera el fichero SQLite que contendra nuestra base de datos.
 - DB_VERSION: Simplemente sera el numero de la version que le daremos al esquema creado para la base de datos.
 - TABLE: Este sera el nombre de la tabla que contendra nuestra base de datos.
-- DEFAULT_SORT: Ordena descendente por lo valores dados en Column.
+- DEFAULT_SORT: Ordena descendente por lo valores dados en Columna.
 - ID: Es un identificador de la tabla.
 
 
@@ -64,29 +64,29 @@ sendBroadcast(new Intent("com.marakana.android.yamba.action.NEW_STATUSES").putEx
 **Punto 5**
 
 - public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/vnd.com.marakana.android.yamba.provider.status";<br>
-**R/:** Sirve para....
+**R/:** Es un tipo MIME que devuelve un registro único concreto de una URI dada.
 
 - public static final String STATUS_TYPE_DIR = "vnd.android.cursor.dir/vnd.com.marakana.android.yamba.provider.status";<br>
-**R/:** Sirve para....
+**R/:** Es un tipo MIME que devuelve una lista de registros como resultado de una URI dada.
 
 - public static final String DEFAULT_SORT = Column.CREATED_AT + "DESC";<br>
-**R/:** Sirve para....
+**R/:** Sirve para ordenar descendente los valores dados en una columna que se crea.
 
 <br>
 **Punto 6**
 
 **a)**Explique qué hacen los siguientes métodos y como estan funcionando dentro de la clase StatusProvider:
-- onCreate:
+- onCreate: Servirve para inicializar todos los recursos de la base de datos necesarios para el funcionamiento del nuevo content provider.
 
-- getType:
+- getType: Permite conocer el tipo de datos devueltos por el content provider. Este tipo de datos se expresan como un tipo MIME, así como lo hacen los navegadores web para determinar el tipo de datos que están recibiendo tras una petición a un servidor.
 
-- insert:
+- insert: Permite la inserción de los datos. Devuelve la URI a la que hace referencia el nuevo registro insertado.
 
-- update:
+- update: Permite la modificación de los datos. Recibe como parámetros una URI y devuelve el número de registros afectados.
 
-- delete:
+- delete: Permite la eliminación de los datos. Recibe como parámetros una URI y devuelve el número de registros afectados.
 
-- query:
+- query: Permite la consulta de los datos. Recibe como parámetros una URI y devuelve los datos solicitados según la URI indicada, los criterios de selección y de ordenación que se pasan como parámetro.
 
 **b)** Defina qué es un Cursor y de un ejemplo.
 
