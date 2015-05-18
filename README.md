@@ -42,32 +42,25 @@ importamos la clase Status del API de Yamba
 - ContentValues values = new ContentValues();<br>
 Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
 
-for (Status status : timeline) {
-values.clear();
-values.put(StatusContract.Column.ID, status.getId());
-values.put(StatusContract.Column.USER, status.getUser());
-values.put(StatusContract.Column.MESSAGE,
-status.getMessage());
-values.put(StatusContract.Column.CREATED_AT, status
-.getCreatedAt().getTime());
+- for (Status status : timeline) {<br>
+values.clear();<br>
+values.put(StatusContract.Column.ID, status.getId());<br>
+values.put(StatusContract.Column.USER, status.getUser());<br>
+values.put(StatusContract.Column.MESSAGE, status.getMessage());<br>
+values.put(StatusContract.Column.CREATED_AT, status.getCreatedAt().getTime());<br><br>
 
-Por cada registro se crea un ContentValues y se reutiliza el mismo ya que se limpia cada vez que inicia un ciclo en el for para posteriormente llenarlo con los valores apropiados provenientes del Status
+Uri uri = getContentResolver().insert(StatusContract.CONTENT_URI, values);<br>
+if (uri != null) {<br>
+count++;<br>
+Log.d(TAG, String.format("%s: %s", status.getUser(), status.getMessage()));<br>
+}<br>
+}<br><br>
 
-Uri uri = getContentResolver().insert(
-StatusContract.CONTENT_URI, values);
-if (uri != null) {
-count++;
-Log.d(TAG,
-String.format("%s: %s", status.getUser(),
-status.getMessage()));
-}
-}
-
-if (count > 0) {
-sendBroadcast(new Intent(
-"com.marakana.android.yamba.action.NEW_STATUSES").putExtra(
-"count", count));
-}
+if (count > 0) {<br>
+sendBroadcast(new Intent("com.marakana.android.yamba.action.NEW_STATUSES").putExtra("count", count));<br>
+}<br>
+<br>
+Por cada registro se crea un ContentValues y se reutiliza el mismo ya que se limpia cada vez que inicia un ciclo en el for para posteriormente llenarlo con los valores apropiados provenientes del Status.
 
 <br>
 **Punto 5**
