@@ -15,12 +15,14 @@ Se implementó un List View para que mostrara la información del content provid
 - DEFAULT_SORT: Ordena descendente por lo valores dados en Column.
 - ID: Es un identificador de la tabla.
 
+<br>
 **Punto 2**
 
 - El método **onCreate** se usa cuando la base de datos se crea por primera vez. Aquí es donde se define la estructura de las tablas y se cargan eventualmente los datos iniciales
 
 - El método **onUpgrade** se usa cuando la base de datos debe ser actualizada.
 
+<br>
 **Punto 3**
 
 import java.util.List;
@@ -65,6 +67,7 @@ sendBroadcast(new Intent(
 "count", count));
 }
 
+<br>
 **Punto 5**
 - public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/vnd.com.marakana.android.yamba.provider.status";
 Sirve para....
@@ -75,6 +78,7 @@ Sirve para....
 - public static final String DEFAULT_SORT = Column.CREATED_AT + "DESC";
 Sirve para....
 
+<br>
 **Punto 6**
 **a)**Explique qué hacen los siguientes métodos y como estan funcionando dentro de la clase StatusProvider:
 - onCreate:
@@ -101,6 +105,7 @@ Sirve para....
 - La diferencia entre un IntentService y un Service:<br>
 Un Service es un componente de la aplicación que no tiene interfaz, se ejecuta en el hilo principal y para deternerlo hay que crear un hilo nuevo dentro del servicio. En cambio un IntentService siempre se ejecuta en segundo plano y se utliza para tareas que requieran un procesamiento largo (en segundo plano) y luego se detienen solos.
 
+<br>
 **Punto 6**
 onDestroy() se llama cuando un servicio es terminado, es decir, dónde deben terminarse hilos o tareas que puedan estar ejecutándose.
 
@@ -120,6 +125,7 @@ View view = inflater.inflate(R.layout.fragment_status, container, false);
 Se utiliza para añadir la vista fragment_status al diseño del fragmento. 
 Solo nos interesa inflar el contenedor que esta en el primer parametro (fragments_status).
 
+<br>
 **Punto 7**
 
 a) Explicar:
@@ -132,6 +138,7 @@ a) Explicar:
 b) Un Fragment siempre esta en un Activity, no pueden existir independientes. 
 Lo que significa que si el ciclo de vida de la actividad termina, el o los fragmentos que esten en esa actividad también serán terminados.
 
+<br>
 **Punto 8**
 
 Explicar:
@@ -158,21 +165,13 @@ R/: Se debe llamar el método commit para que los cambios se lleven a cabo en ca
 
 **Punto 2**
 
-a)
-android:layout_height="wrap_content"
-esta propiedad le indica al componente que tome la altura acorde a su contenido
+a)- android:layout_height="wrap_content": Esta propiedad le indica al componente que tome la altura acorde a su contenido.
 
+- android:layout_height="match_parent": Esta propiedad le indica al componente que tome la altura de su componente padre, es decir el que le contiene
 
-android:layout_height="match_parent"
-esta propiedad le indica al componente que tome la altura de su componente padre, es decir el que le contiene
+- android:hint="@string/hint_status": Con esta propiedad pondremos un texto por defecto para un campo de texto mientras este se encuentre vacio, es decir, el usuario podra visualizarlo mientra no escriba nada 
 
-
-android:hint="@string/hint_status"
-con esta propiedad pondremos un texto por defecto para un campo de texto mientras este se encuentre vacio, es decir, el usuario podra visualizarlo mientra no escriba nada 
-
-
-android:inputType="textMultiLine"
-esta propiedad permite el ingreso de varias lineas texto 
+- android:inputType="textMultiLine": Esta propiedad permite el ingreso de varias lineas texto 
 
 
 b) wrap_content asignara para el componente solo el espacio en pantalla requerido por su contenido, mientras que match_parent usara todo el espacio que tiene el componente padre 
@@ -180,7 +179,7 @@ b) wrap_content asignara para el componente solo el espacio en pantalla requerid
 
 c) Nos permite identificar un componente para hacer uso de el en la clase que despligue el fichero xml de layouts
 
-
+<br>
 **Punto 3**
 
 a) android:text="string/Tweet"
@@ -190,7 +189,7 @@ su nombre es "button_tweet", y se referencia con este no con su contenido
 android:text="@button_tweet/string"
 En este caso se invirtio el verdadero orden, se identifica por el string y luego se llama la variable
 
-
+<br>
 **Punto 4**
 
 a) @Override es una anotacion que significa que estas sobre escribiendo un metodo de la clase padre, ya sea para mejorar el metodo o para que se acople a tu clase hija
@@ -198,14 +197,14 @@ a) @Override es una anotacion que significa que estas sobre escribiendo un metod
 
 b) setContentView señala que hay una clase estática llamada R.layout y, que dentro de esa clase hay una constante entera que apunta a una vista definida por un fichero de recursos layout XML con los componentes que se visualizaran en la actividad y debe estar en el directorio ./res/layout
 
-
+<br>
 **Punto 5**
 
 a) El método **findViewById()** enlaza las variables con los objetos definidos en el archivo XML. Recibe como parámetro una ruta que parte de la referencia a la clase R.
 
 b) Al quitar el **(EditText)**, no compila el proyecto y saca un error "error: incompatible types: View cannot be converted to EditText" lo que significa que la vista no puede convertir el texto.
 
-
+<br>
 **Punto 7**
 
 a) Los logging son registros de actividades del sistema. En Android existe la clase android.util.Log que proporciona ese servicio. Se clasifica por su nivel de criticidad.
@@ -219,7 +218,7 @@ c) 3 tipos de Log
 
 d)
 
-
+<br>
 **Punto 8**
 
 a) La diferencia entre un simple-thread y un multithread, es que el simple-thread son programas que realizan una sola tarea, denominados de flujo único. En cambio los multithread realizan más de una tarea, denominados de flujo multiple.
