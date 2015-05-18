@@ -75,18 +75,18 @@ sendBroadcast(new Intent("com.marakana.android.yamba.action.NEW_STATUSES").putEx
 <br>
 **Punto 6**
 
-**a)**Explique qué hacen los siguientes métodos y como estan funcionando dentro de la clase StatusProvider:
-- onCreate: Servirve para inicializar todos los recursos de la base de datos necesarios para el funcionamiento del nuevo content provider.
+**a)** Explique qué hacen los siguientes métodos y como estan funcionando dentro de la clase StatusProvider:
+- onCreate(): Servirve para inicializar todos los recursos de la base de datos necesarios para el funcionamiento del nuevo content provider.
 
-- getType: Permite conocer el tipo de datos devueltos por el content provider. Este tipo de datos se expresan como un tipo MIME, así como lo hacen los navegadores web para determinar el tipo de datos que están recibiendo tras una petición a un servidor.
+- getType(): Permite conocer el tipo de datos devueltos por el content provider. Este tipo de datos se expresan como un tipo MIME, así como lo hacen los navegadores web para determinar el tipo de datos que están recibiendo tras una petición a un servidor.
 
-- insert: Permite la inserción de los datos. Devuelve la URI a la que hace referencia el nuevo registro insertado.
+- insert(): Permite la inserción de los datos. Devuelve la URI a la que hace referencia el nuevo registro insertado.
 
-- update: Permite la modificación de los datos. Recibe como parámetros una URI y devuelve el número de registros afectados.
+- update(): Permite la modificación de los datos. Recibe como parámetros una URI y devuelve el número de registros afectados.
 
-- delete: Permite la eliminación de los datos. Recibe como parámetros una URI y devuelve el número de registros afectados.
+- delete(): Permite la eliminación de los datos. Recibe como parámetros una URI y devuelve el número de registros afectados.
 
-- query: Permite la consulta de los datos. Recibe como parámetros una URI y devuelve los datos solicitados según la URI indicada, los criterios de selección y de ordenación que se pasan como parámetro.
+- query(): Permite la consulta de los datos. Recibe como parámetros una URI y devuelve los datos solicitados según la URI indicada, los criterios de selección y de ordenación que se pasan como parámetro.
 
 **b)** Defina qué es un Cursor y de un ejemplo.
 
