@@ -40,7 +40,7 @@ Para referirnos a un Url Web
 importamos la clase Status del API de Yamba
 
 - ContentValues values = new ContentValues();<br>
-- Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
+Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
 
 for (Status status : timeline) {
 values.clear();
