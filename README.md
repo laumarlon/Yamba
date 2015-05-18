@@ -88,7 +88,14 @@ sendBroadcast(new Intent("com.marakana.android.yamba.action.NEW_STATUSES").putEx
 
 - query(): Permite la consulta de los datos. Recibe como parámetros una URI y devuelve los datos solicitados según la URI indicada, los criterios de selección y de ordenación que se pasan como parámetro.
 
-**b)** Defina qué es un Cursor y de un ejemplo.
+**b)** Defina qué es un Cursor y de un ejemplo.<br>
+Es un apuntador a las filas retornadas de una consulta permitiendo manipular los datos de cada fila de forma individual. Es muy similara al concepto de cursores que maneja SQL Server y MySQL las cuales usan la palabra reservada CURSOR para declarar estos espacios de lectura.
+<br><br>
+Ejemplo:<br>
+public Cursor getAllQuotes(){<br>
+        //Seleccionamos todas las filas de la tabla Quotes<br>
+        return database.rawQuery("select * from " + QUOTES_TABLE_NAME, null);<br>
+    }<br>
 
 
 <br><br>
