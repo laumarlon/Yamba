@@ -223,20 +223,20 @@ Explicar:
 
 Se crea de la siguiente manera (donde Parametros, Progreso y Resultado serán reemplazados por nombres de clases según los tipos de datos con los que trabaje la tarea):
 
-class Laboratorio extends AsyncTask<Parametros, Progreso, Resultado> {
-       @Override protected void onPreExecute() {
-              …     
-       }
-       @Override protected Resultado doInBackground(Parametros... par) {
-             …     
-       }
-       @Override protected void onProgressUpdate(Progreso... prog) {
-       …     
-       }
-       @Override protected void onPostExecute(Resultado result) {
-          …    
-       }
-}
+class Laboratorio extends AsyncTask<Parametros, Progreso, Resultado> {<br>
+       @Override protected void onPreExecute() {<br>
+             …     <br>
+       }<br>
+       @Override protected Resultado doInBackground(Parametros... par) {<br>
+             …     <br>
+       }<br>
+       @Override protected void onProgressUpdate(Progreso... prog) {<br>
+             …     <br>
+       }<br>
+       @Override protected void onPostExecute(Resultado result) {<br>
+             …    <br>
+       }<br>
+}<br>
 
 El método **doInBackground()** es el que realiza la tarea asignada. Dicho método se ejecuta en el hilo del interfaz de usuario y lo hace en un hilo nuevo creado para ese propósito. 
 
