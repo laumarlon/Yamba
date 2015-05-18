@@ -48,14 +48,12 @@ values.put(StatusContract.Column.ID, status.getId());<br>
 values.put(StatusContract.Column.USER, status.getUser());<br>
 values.put(StatusContract.Column.MESSAGE, status.getMessage());<br>
 values.put(StatusContract.Column.CREATED_AT, status.getCreatedAt().getTime());<br><br>
-
 Uri uri = getContentResolver().insert(StatusContract.CONTENT_URI, values);<br>
 if (uri != null) {<br>
 count++;<br>
 Log.d(TAG, String.format("%s: %s", status.getUser(), status.getMessage()));<br>
 }<br>
 }<br><br>
-
 if (count > 0) {<br>
 sendBroadcast(new Intent("com.marakana.android.yamba.action.NEW_STATUSES").putExtra("count", count));<br>
 }<br>
