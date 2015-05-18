@@ -27,20 +27,20 @@ Se implementó un List View para que mostrara la información del content provid
 <br>
 **Punto 3**
 
-- import java.util.List;
+- import java.util.List;<br>
 Importa la clase listas contenida en el paquete java.util
 
-- import android.content.ContentValues;
+- import android.content.ContentValues;<br>
 Para poder definir campos, es decir los registros
 
-- import android.net.Uri;
+- import android.net.Uri;<br>
 Para referirnos a un Url Web
 
-- import com.marakana.android.yamba.clientlib.YambaClient.Status;
+- import com.marakana.android.yamba.clientlib.YambaClient.Status;<br>
 importamos la clase Status del API de Yamba
 
-- ContentValues values = new ContentValues();
-Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
+- ContentValues values = new ContentValues();<br>
+- Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
 
 for (Status status : timeline) {
 values.clear();
