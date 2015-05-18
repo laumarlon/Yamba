@@ -28,19 +28,19 @@ Se implementó un List View para que mostrara la información del content provid
 **Punto 3**
 
 - import java.util.List;<br>
-Importa la clase listas contenida en el paquete java.util
+**R/:** Importa la clase listas contenida en el paquete java.util
 
 - import android.content.ContentValues;<br>
-Para poder definir campos, es decir los registros
+**R/:** Para poder definir campos, es decir los registros
 
 - import android.net.Uri;<br>
-Para referirnos a un Url Web
+**R/:** Para referirnos a un Url Web
 
 - import com.marakana.android.yamba.clientlib.YambaClient.Status;<br>
-importamos la clase Status del API de Yamba
+**R/:** Importamos la clase Status del API de Yamba
 
 - ContentValues values = new ContentValues();<br>
-Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
+**R/:** Los valores a insertar los pasaremos como elementos de tipo ContentValues, donde almacenaremos parejas de clave-valor, donde la clave será el nombre de cada campo y el valor será el dato correspondiente a insertar en dicho campo.
 
 - for (Status status : timeline) {<br>
 values.clear();<br>
@@ -58,7 +58,7 @@ if (count > 0) {<br>
 sendBroadcast(new Intent("com.marakana.android.yamba.action.NEW_STATUSES").putExtra("count", count));<br>
 }<br>
 <br>
-Por cada registro se crea un ContentValues y se reutiliza el mismo ya que se limpia cada vez que inicia un ciclo en el for para posteriormente llenarlo con los valores apropiados provenientes del Status.
+**R/:** Por cada registro se crea un ContentValues y se reutiliza el mismo ya que se limpia cada vez que inicia un ciclo en el for para posteriormente llenarlo con los valores apropiados provenientes del Status.
 
 <br>
 **Punto 5**
@@ -142,21 +142,17 @@ Solo nos interesa inflar el contenedor que esta en el primer parametro (fragment
 
 Explicar:
 
-- FragmentManager fragmentManager = getFragmentManager();
+- FragmentManager fragmentManager = getFragmentManager();<br>
+**R/:** Llama a un fragment dentro de una actividad.
 
-R/: Llama a un fragment dentro de una actividad.
+- FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();<br>
+**R/:** Es un API que permite realizar transacciones entre fragments.
 
-- FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction(); 
+- FragmentTransaction.add(android.R.id.content, fragment,  fragment.getClass().getSimpleName());<br>
+**R/:** Es para agregar un fragmento al estado de la actividad.
 
-R/: Es un API que permite realizar transacciones entre fragments.
-
-- FragmentTransaction.add(android.R.id.content, fragment,  fragment.getClass().getSimpleName()); 
-
-R/: Es para agregar un fragmento al estado de la actividad.
-
-- FragmentTransaction.commit(); 
-
-R/: Se debe llamar el método commit para que los cambios se lleven a cabo en cada ejecución. 
+- FragmentTransaction.commit();<br>
+**R/:** Se debe llamar el método commit para que los cambios se lleven a cabo en cada ejecución. 
 
 
 <br><br>
