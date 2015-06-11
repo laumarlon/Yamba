@@ -2,12 +2,19 @@
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:background="@mipmap/icono"
-
         android:layout_height="match_parent" >
+
         <fragment
             android:id="@+id/fragment_status"
+            class="com.aplicaciones.g1.yamba.StatusFragment"
             android:name="com.aplicaciones.g1.yamba.StatusFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <fragment
+            class="com.aplicaciones.g1.yamba.Fragment_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.aplicaciones.g1.yamba.Fragment_new"
+            />
     </FrameLayout>
 
