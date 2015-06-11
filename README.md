@@ -1,5 +1,10 @@
 # Yamba
 
+###**LAB7 BROADCAST & WIDGET**
+Se implementó un Broadcast Receivers para lanzar el servicio de actualización de mensajes en el arranque del celular y la utilización de los widgets.
+
+
+<br><br>
 ###**LAB6 LIST VIEW & ADAPTERS**
 Se implementó un List View para que mostrara la información del content provider que se habia realizado con anterioridad y lo enlazamos por medio del Adapter. 
 
